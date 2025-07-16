@@ -1,0 +1,337 @@
+/* Adăugați stilurile existente ale header-ului și așa mai departe */
+
+/* Stilurile pentru bara de navigare */
+
+.header {
+    overflow: hidden;
+    position: fixed;
+    top: 0; /* plasează header-ul în partea de sus a paginii */
+    left: 0; /* asigură alinierea la stânga */
+    right: 0; /* asigură alinierea la dreapta */
+    z-index: 1000; 
+    background-color: #012801;
+    padding: 20px 10px;
+    
+  }
+  
+  .main-content {
+    margin-top: 60px; /* pentru a se potrivi înălțimii header-ului */
+}
+  
+  .abt:hover{
+    background-color: #99FFCC;
+    color: #009966;
+  }
+
+  .conct:hover{
+    background-color: #99FFCC;
+    color: #009966;
+  }
+
+  .hm:hover{
+    background-color: #99FFCC;
+    color: #009966;
+  }
+
+  /* Style header links */
+  .header a {
+    float: left;
+    color: #fafcfb;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style logo link */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /* Style iconița */
+.header a.logo i {
+    color: #fafcfb; /* culoarea iconiței */
+    margin-right: 5px; /* spatiul între iconiță și text */
+}
+  
+
+  
+/* Muta butoanele în dreapta */
+.header-right {
+    float: right;
+    display: flex; /* adăugăm display: flex pentru a aranja butoanele în linie */
+    align-items: center; /* aliniem elementele vertical */
+}
+
+.dropdown {
+    position: relative;
+    margin-left: 10px; /* adăugăm un spațiu între butoane */
+}
+
+/* Stil pentru butoanele de meniu și meniul desfășurat */
+.dropbtn {
+    background-color: #012801;
+    color: #fafcfb;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Stil pentru conținutul meniului desfășurat */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #012801;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+/* Afișare conținut dropdown atunci când hover pe butonul de meniu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+  /* Ascunde meniul desfășurat inițial */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #012801;
+    width: 120px;
+    height: auto; 
+    border: 5px solid #024e02; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10001;
+  }
+  
+  /* Style butonul care deschide meniul */
+  .dropbtn {
+    background-color: #012801;
+    color: #fafcfb;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Schimbă culoarea cand mouse-ul este peste buton */
+  .dropbtn:hover {
+    background-color: #99FFCC;
+    color: #009966;
+  }
+  
+  /* Style link-urile din meniu */
+  .dropdown-content a {
+    color: #fafcfb;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    width: 100%; 
+    box-sizing: border-box; 
+  }
+  
+  /* Schimbă culoarea link-urilor din meniu la hover */
+  .dropdown-content a:hover {
+    background-color: #99FFCC;
+    color: #009966;
+    
+  }
+  
+  /* Arată meniul desfășurat când butonul este apăsat */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style butoanele de conectare */
+  .header .header-right .dropdown {
+    float: left;
+    overflow: hidden;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Poziționează butoanele */
+  .header .header-right .dropdown a {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-left: 4px;
+  }
+
+  /* Style containerul pentru iconița utilizatorului */
+.user-icon {
+    padding: 12px 0px; 
+    display: flex;
+    align-items: left; 
+    justify-content: center; 
+  }
+  
+  /* Style iconița utilizatorului */
+  .user-icon i {
+    color: #fafcfb;
+    font-size: 18px;
+    margin-right: 30px;
+    
+  }
+
+  .user-dropdown {
+    float: left;
+}
+
+/* Ajustare stil butonul utilizatorului */
+.user-dropdown .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Stil pentru butonul utilizatorului */
+.user-dropdown .dropbtn {
+    background-color: #012801;
+    color: #fafcfb;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Stil pentru conținutul dropdown-ului utilizatorului */
+.user-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #012801;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+/* Afișare conținut dropdown atunci când hover pe butonul utilizatorului */
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Stil pentru link-urile din dropdown */
+.user-dropdown .dropdown-content a {
+    color: #009966;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Schimbă culoarea link-urilor din dropdown la hover */
+.user-dropdown .dropdown-content a:hover {
+    background-color: #99FFCC;
+    color: #009966;
+}
+
+/* Stil pentru butonul "Log in" atunci când treci cu mouse-ul peste el */
+.user-dropdown .dropbtn:hover {
+  background-color: #99FFCC;
+  color: #009966; /* Schimbă culoarea textului atunci când hover */
+}
+
+
+.main-content {
+    margin-top: 60px; /* Ajustează margin-top pentru a lăsa spațiu sub bara de navigare */
+    background-image: url('background.jpg'); /*background-image: url('/assets/background.jpg');*/
+    background-size: inherit;
+    background-repeat: no-repeat; 
+}
+
+/* Stilurile pentru formularul de contact */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajustează înălțimea containerului pentru a se potrivi înălțimii ferestrei vizibile minus înălțimea header-ului */
+    padding: 0 20px;
+}
+
+.contact-form, .contact-details {
+    width: 45%;
+}
+
+.contact-form {
+    margin-left: 80px;
+    background: #012801;
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.contact-form h2, .contact-details h2 {
+    margin-left: 250px;
+    color:#fafcfb;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #024e02;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+/* Schimbarea culorii la hover pentru câmpurile de intrare și textarea */
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+    background-color: #a5f9cf; /* Schimbă culoarea fundalului la hover */
+}
+
+/* Schimbarea culorii la focus pentru câmpurile de intrare și textarea */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    background-color: #a5f9cf; /* Schimbă culoarea fundalului la focus */
+    border: 1px solid #66afe9; /* Schimbă culoarea marginii la focus */
+    outline: none; /* Elimină conturul implicit */
+}
+
+.contact-form button {
+    background: #024e02;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #99FFCC;
+    color: #009966;
+}
+
+
+.contact-info {
+    text-align: left;
+    margin-left: 250px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #fff; 
+    font-family: system-ui;
+}
+
+body {
+  display: block;
+  margin: 0px;
+}
