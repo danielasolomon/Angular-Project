@@ -1,0 +1,17 @@
+<div class="form" [formGroup]="form">
+    <div class="form-container">
+        <mat-form-field appearance="outline">
+            <mat-label>NEW Username</mat-label>
+            <input matInput type="text" formControlName="username" placeholder="NEW Username" required />
+        </mat-form-field> 
+
+        <mat-form-field appearance="outline">
+            <mat-label>NEW Parssword</mat-label>
+            <input matInput type="password" formControlName="parola" placeholder="NEW Parssword" required />
+        </mat-form-field>
+
+        <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+        <button mat-raised-button color="primary" (click)="logIn()">Log in</button>
+    </div>
+</div>

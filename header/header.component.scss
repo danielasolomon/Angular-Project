@@ -1,0 +1,215 @@
+$header-bg-color: #012801;
+$hover-bg-color: #99FFCC;
+$hover-text-color: #009966;
+
+$header-height: 60px; // Înălțimea header-ului pentru a ajusta margin-top pentru main-content
+
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $header-bg-color;
+  padding: 20px 10px;
+  display: flex; // Setează afișarea header-ului ca flex container
+  align-items: center; // Aliniază elementele pe axa verticală
+  justify-content: space-between; // Distribuie elementele pe axa orizontală
+}
+
+.main-content {
+  margin-top: $header-height; // Ajustarea margin-top pentru a se potrivi înălțimii header-ului
+}
+
+.abt {
+  background-color: #012801;
+  color: #fafcfb;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #99FFCC;
+    color: #009966;
+  }
+}
+.conct{
+  background-color: #012801;
+  color: #fafcfb;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #99FFCC;
+    color: #009966;
+  }
+}
+.hm{
+  background-color: #012801;
+  color: #fafcfb;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #99FFCC;
+    color: #009966;
+  }
+}
+
+.hm:hover,
+.conct:hover {
+  color: #009966 !important;
+}
+
+.header a {
+  color: #fafcfb;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+
+  &.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  &.logo i {
+    color: #fafcfb;
+    margin-right: 5px;
+  }
+}
+
+.header-right {
+  display: flex; // Setează afișarea elementelor din dreapta ca flex container
+  align-items: center; // Aliniază elementele pe axa verticală
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: $header-bg-color;
+  width: 120px;
+  height: auto;
+  border: 5px solid #024e02;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10001;
+}
+
+.dropbtn {
+  background-color: $header-bg-color;
+  color: #fafcfb;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: #009966;;
+  }
+}
+
+.dropdown-content a {
+  color: #fafcfb;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-content a:hover {
+  background-color: $hover-bg-color;
+  color: $hover-text-color;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown a {
+  float: none;
+  display: block;
+  text-align: left;
+  margin-left: 4px;
+}
+
+.user-icon {
+  padding: 12px 0px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+
+  i {
+    color: #fafcfb;
+    font-size: 18px;
+    margin-right: 30px;
+  }
+}
+
+.user-dropdown {
+  float: left;
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropbtn {
+      background-color: $header-bg-color;
+      color: #fafcfb;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $hover-bg-color;
+        color: #009966;;
+      }
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $header-bg-color;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1001;
+
+      a {
+        color: #009966;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background-color: $hover-bg-color;
+          color: #009966;;
+        }
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+  }
+}
+
+.dropdown:last-child .dropbtn {
+  margin-right: 10px;
+}
+

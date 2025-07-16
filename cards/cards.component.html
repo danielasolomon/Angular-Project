@@ -1,0 +1,15 @@
+<div class="cards-section">
+    <div class="card">
+        <div class="card-details">
+            <h3><span>Descriere:</span> {{ dataSource.descriere }}</h3>
+            <h3><span>Preț:</span> {{ dataSource.pret }}</h3>
+            <div class="buttons">
+                <button class="add-to-cart">Adaugă în coș</button>
+                <button class="add-to-favorites">Adaugă la favorite</button>
+            </div>
+        </div>
+        <div class="card-image">
+            <img [src]="dataSource.imageURL" alt="Imagine {{ dataSource.position }}">
+        </div>
+    </div>
+</div>

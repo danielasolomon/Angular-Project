@@ -1,0 +1,7 @@
+<div class="card-grid">
+  <div class="card" *ngFor="let card of cards">
+    <h2>{{card.title}}</h2>
+    <img [src]="card.imageURL" alt="{{card.title}}" class="card-image">
+    <button class="details-button" (click)="goToCards(card.id)" >Vezi detalii</button>
+  </div>
+</div>

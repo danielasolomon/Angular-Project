@@ -1,0 +1,56 @@
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+  background-image: url('./../../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #99FFCC;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 70px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #012801;
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 0px; // Adaugăm o mică distanță între titlu și imagine
+  }
+
+  .card-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .details-button {
+    position: absolute;
+    top: 10px; // Plasăm butonul deasupra imaginii
+    right: 10px; // Plasăm butonul în dreapta imaginii
+    background-color: #2a7e2a;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #61d59b;
+      color: #006600;
+    }
+  }
+}

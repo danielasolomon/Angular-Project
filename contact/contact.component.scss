@@ -1,0 +1,106 @@
+$header-bg-color: #012801;
+$hover-bg-color: #99FFCC;
+$hover-text-color: #009966;
+
+$header-height: 60px; // Înălțimea header-ului pentru a ajusta margin-top pentru main-content
+
+
+
+.main-content {
+    margin-top: 60px; /* Ajustează margin-top pentru a lăsa spațiu sub bara de navigare */
+    background-image: url('/assets/background.jpg');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0px; /* Elimină marginile implicite ale corpului */
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Stilurile pentru formularul de contact */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajustează înălțimea containerului pentru a se potrivi înălțimii ferestrei vizibile minus înălțimea header-ului */
+    padding: 0 20px;
+}
+
+.contact-form,
+.contact-details {
+    width: 45%;
+}
+
+.contact-form {
+    margin-left: 80px;
+    background: #012801;
+    border-radius: 8px;
+    padding: 35px;
+}
+
+.contact-form h2,
+.contact-details h2 {
+    margin-left: 250px;
+    color: #fafcfb;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #024e02;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+/* Schimbarea culorii la hover pentru câmpurile de intrare și textarea */
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form textarea:hover {
+    background-color: #a5f9cf; /* Schimbă culoarea fundalului la hover */
+}
+
+/* Schimbarea culorii la focus pentru câmpurile de intrare și textarea */
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    background-color: #a5f9cf; /* Schimbă culoarea fundalului la focus */
+    border: 1px solid #66afe9; /* Schimbă culoarea marginii la focus */
+    outline: none; /* Elimină conturul implicit */
+}
+
+.contact-form button {
+    background: #024e02;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #99FFCC;
+    color: #009966;
+}
+
+.contact-info {
+    text-align: left;
+    margin-left: 250px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: system-ui;
+}
+
+
+

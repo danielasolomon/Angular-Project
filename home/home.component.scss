@@ -1,0 +1,75 @@
+$header-bg-color: #012801;
+$hover-bg-color: #99FFCC;
+$hover-text-color: #009966;
+
+$header-height: 60px; // Înălțimea header-ului pentru a ajusta margin-top pentru main-content
+
+
+.home-section {
+  text-align: right;
+  padding: 20px 20px;
+  background-image: url('./../../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    margin-top: 20px;
+    margin-right: 250px;
+    font-family: system-ui;
+    font-size: 20px;
+    color: #fcfefd;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-left: calc(50% + 35px);
+    margin-top: 20px;
+    text-align: justify;
+    font-family: system-ui;
+    margin-right: 20px;
+    color: #fcfefd;
+  }
+
+  p {
+    font-family: fantasy;
+    font-size: 50px;
+    margin-right: 47px;
+    color: #fcfefd;
+    margin-bottom: 25px;
+  }
+
+  h4 {
+    margin-right: 20px;
+    font-family: system-ui;
+    font-style: italic;
+    font-size: 28px;
+    color: #fcfefd;
+  }
+}
+
+.contact-button {
+  width: 200px;
+  align-self: flex-end;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $header-bg-color;
+  color: #fafcfb;
+  font-family: system-ui;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 3px solid #3f6f1c;
+  cursor: pointer;
+  margin-right: 250px;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: #012801;
+  }
+}
